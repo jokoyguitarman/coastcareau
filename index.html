@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Vet Clinic Sydney | Coastcare Mobile Vet - Expert Care at Your Door</title>
+    <meta name="description" content="Professional mobile vet clinic serving Sydney. Expert veterinary care delivered to your home. No waiting rooms, no stress. Book your mobile vet visit today!">
+    <meta name="keywords" content="mobile vet Sydney, vet oncall Sydney, mobile vet clinic Sydney, home vet visit Sydney, mobile veterinary service Sydney">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VeterinaryClinic",
+        "name": "Coastcare Mobile Vet",
+        "description": "Professional mobile veterinary clinic serving Sydney with expert care delivered to your home",
+        "url": "https://coastcarevet.com.au",
+        "logo": "https://coastcarevet.com.au/coastcare-logo.png",
+        "image": "https://coastcarevet.com.au/sample-mobile-vet.png",
+        "telephone": "+61234567890",
+        "email": "hello@coastcarevet.com.au",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sydney",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        "areaServed": [
+            "Eastern Suburbs Sydney",
+            "Northern Beaches Sydney", 
+            "Inner West Sydney",
+            "North Shore Sydney",
+            "Sutherland Shire Sydney"
+        ],
+        "serviceType": "Mobile Veterinary Services",
+        "openingHours": "Mo-Fr 08:00-18:00,Sa 09:00-16:00",
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Mobile Veterinary Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Routine Checkups",
+                        "description": "Comprehensive health examinations for cats and dogs"
+                    }
+                },
+                {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Vaccinations",
+                        "description": "Essential vaccinations and preventive care"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service", 
+                        "name": "Dental Care",
+                        "description": "Professional dental cleaning and oral health services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Senior Pet Care", 
+                        "description": "Specialized care for aging pets"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Emergency Care",
+                        "description": "Urgent veterinary care when your pet needs it most"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "https://www.facebook.com/coastcarevet",
+            "https://www.instagram.com/coastcarevet",
+            "https://www.twitter.com/coastcarevet"
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #2A63F5 0%, #4EABE8 100%);
+            box-shadow: 0 2px 20px rgba(42, 99, 245, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100px;
+        }
+
+        /* Logo Section */
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-container {
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) 
+                    drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+        }
+
+        .logo-image:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4)) 
+                    drop-shadow(0 12px 24px rgba(0, 0, 0, 0.3));
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links li a:hover {
+            color: #FAE04B;
+            transform: translateY(-1px);
+        }
+
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #FAE04B;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links li a:hover::after {
+            width: 100%;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background: #FAE04B;
+            color: #2A63F5;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(250, 224, 75, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #F5D700;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(250, 224, 75, 0.4);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 12px 12px;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .mobile-nav-links li {
+            margin-bottom: 15px;
+        }
+
+        .mobile-nav-links li a {
+            color: #2A63F5;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .mobile-nav-links li:last-child a {
+            border-bottom: none;
+        }
+
+        .mobile-cta {
+            padding: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .header-container {
+                height: 90px;
+                padding: 0 15px;
+            }
+
+            .logo-container {
+                height: 70px;
+            }
+
+            .cta-button {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-section {
+                gap: 10px;
+            }
+
+            .logo-container {
+                height: 60px;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2A63F5 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero-content .tagline {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #FAE04B;
+            color: #2A63F5;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(250, 224, 75, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary:hover {
+            background: #F5D700;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(250, 224, 75, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 16px 32px;
+            border: 2px solid white;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #2A63F5;
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        .floating-paw {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-paw:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+        .floating-paw:nth-child(2) { top: 60%; right: 15%; animation-delay: 2s; }
+        .floating-paw:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose {
+            padding: 100px 0;
+            background-image: url('./ChatGPT Image Sep 30, 2025, 05_12_45 PM.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .why-choose::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(248, 250, 252, 0.85);
+            z-index: 1;
+        }
+
+        .why-choose .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #374151;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2A63F5, #4EABE8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #f8fafc;
+            padding: 0;
+            border-radius: 16px;
+            border-left: 4px solid #FAE04B;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-image {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 30px 0 30px;
+        }
+
+        .service-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            padding: 0 30px 30px 30px;
+        }
+
+        .service-icon {
+            color: #2A63F5;
+            font-size: 1.5rem;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #2A63F5 0%, #4EABE8 100%);
+            color: white;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #FAE04B;
+            color: #2A63F5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 25px;
+        }
+
+        .step h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 25px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2A63F5;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Service Areas Section */
+        .service-areas.areas-section {
+            padding: 60px 0;
+            background-image: url('map.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .service-areas.areas-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(248, 250, 252, 0.85);
+            z-index: 1;
+        }
+
+        .service-areas.areas-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-areas-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            align-items: stretch;
+            margin-top: 40px;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .service-areas-photo {
+            background: #f8fafc;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-areas-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .area-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .area-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .area-card h4 {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        .area-card p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 25px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .contact .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .contact .contact-item:hover {
+            background: #e5e7eb;
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #2A63F5;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-text h4 {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        .contact-text p {
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .contact-form {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .contact-form h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2A63F5;
+            box-shadow: 0 0 0 3px rgba(42, 99, 245, 0.1);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #FAE04B;
+            color: #2A63F5;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .submit-btn:hover {
+            background: #F5D700;
+            transform: translateY(-2px);
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, #2A63F5 0%, #4EABE8 100%);
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: 80px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        /* Logo Section */
+        .footer-logo {
+            grid-column: 1;
+        }
+
+        .footer-logo-container {
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-image {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            transition: all 0.3s ease;
+        }
+
+        .footer-logo-image:hover {
+            transform: scale(1.05);
+        }
+
+        .footer-tagline {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .footer-description {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .social-link:hover {
+            background: #FAE04B;
+            color: #2A63F5;
+            transform: translateY(-2px);
+        }
+
+        /* Quick Links */
+        .footer-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: #FAE04B;
+            transform: translateX(5px);
+        }
+
+        .footer-links i {
+            font-size: 12px;
+            width: 16px;
+        }
+
+        /* Footer Contact Info */
+        .footer .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer .contact-item i {
+            width: 20px;
+            color: white;
+        }
+
+        .footer .contact-item a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer .contact-item a:hover {
+            color: #FAE04B;
+        }
+
+        /* Footer Service Areas */
+        .footer .service-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .footer .service-area {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .footer .service-area:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            opacity: 0.7;
+            margin: 0;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .footer-bottom-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom-links a:hover {
+            color: #FAE04B;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .service-areas-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .service-areas-photo {
+                min-height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .footer {
+                padding: 40px 0 20px;
+            }
+
+            .footer-container {
+                padding: 0 15px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                padding: 14px 24px;
+                font-size: 1rem;
+            }
+
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-areas-photo {
+                min-height: 250px;
+            }
+
+            .footer-logo-image {
+                height: 60px;
+            }
+
+            .footer-main {
+                gap: 25px;
+            }
+
+            .footer-bottom-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img src="H:\Coastcare\PNG-20250930T083835Z-1-001\PNG\9 cut.png" alt="Coastcare Mobile Vet" class="logo-image">
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="cta-button">
+                    <i class="fas fa-phone"></i> Book a Visit
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+                <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="#blog" onclick="closeMobileMenu()">Blog</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+            </ul>
+            <div class="mobile-cta">
+                <a href="#contact" class="cta-button" onclick="closeMobileMenu()">
+                    <i class="fas fa-phone"></i> Book a Visit
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-paw">🐾</div>
+            <div class="floating-paw">🐾</div>
+            <div class="floating-paw">🐾</div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Expert Vet Care, Right at Your Door</h1>
+                <p class="tagline">Mobile Vet Clinic Sydney</p>
+                <p>No waiting rooms, no car rides, no stress. We bring professional veterinary care directly to your home, wherever your pets feel most comfortable.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Book a Visit
+                    </a>
+                    <a href="#services" class="btn-secondary">
+                        <i class="fas fa-stethoscope"></i>
+                        Our Services
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="H:\Coastcare\sample-mobile-vet.png" alt="Mobile Vet Van Sydney - Coastcare Mobile Veterinary Service">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Coastcare Mobile Vet?</h2>
+                <p>We're animal lovers first, vets second. After more than a decade caring for pets, we knew something had to change.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>No Waiting Room Stress</h3>
+                    <p>Your pets stay comfortable in their own environment. No car rides, no unfamiliar smells, no anxiety.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>We work around your busy life. Evening and weekend appointments available to fit your schedule.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Care</h3>
+                    <p>Fully qualified veterinarians with years of experience. Same quality care you'd get at any clinic.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Personalised Service</h3>
+                    <p>One-on-one attention for your pet. We take the time to understand their unique needs and concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Mobile Veterinary Services</h2>
+                <p>Comprehensive care for cats and dogs, delivered with compassion and expertise</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="H:\Coastcare\routine checkups.png" alt="Routine Checkups - Mobile Vet Sydney" class="service-image">
+                    </div>
+                    <h3><i class="fas fa-heartbeat service-icon"></i> Routine Checkups</h3>
+                    <p>Comprehensive health examinations, weight monitoring, and preventive care to keep your pet healthy and happy.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="H:\Coastcare\vaccinations.png" alt="Vaccinations - Mobile Vet Sydney" class="service-image">
+                    </div>
+                    <h3><i class="fas fa-syringe service-icon"></i> Vaccinations</h3>
+                    <p>Essential vaccinations and booster shots to protect your pet from common diseases and infections.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="H:\Coastcare\dental care.png" alt="Dental Care - Mobile Vet Sydney" class="service-image">
+                    </div>
+                    <h3><i class="fas fa-tooth service-icon"></i> Dental Care</h3>
+                    <p>Professional dental cleaning, oral health assessments, and treatment for dental issues.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="H:\Coastcare\wound care.png" alt="Minor Surgery - Mobile Vet Sydney" class="service-image">
+                    </div>
+                    <h3><i class="fas fa-cut service-icon"></i> Minor Surgery</h3>
+                    <p>Small surgical procedures, wound care, and minor treatments performed in the comfort of your home.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="H:\Coastcare\senior care.png" alt="Senior Pet Care - Mobile Vet Sydney" class="service-image">
+                    </div>
+                    <h3><i class="fas fa-walking service-icon"></i> Senior Pet Care</h3>
+                    <p>Specialised care for aging pets, including pain management, mobility support, and quality of life assessments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="H:\Coastcare\emergency.png" alt="Emergency Care - Mobile Vet Sydney" class="service-image">
+                    </div>
+                    <h3><i class="fas fa-exclamation-triangle service-icon"></i> Emergency Care</h3>
+                    <p>Urgent veterinary care when your pet needs immediate attention. Available for emergency situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Getting expert vet care for your pet is simple and stress-free</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Book Your Visit</h3>
+                    <p>Call us or book online. Tell us about your pet and what services you need.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>We Come to You</h3>
+                    <p>Our mobile vet arrives at your home with all necessary equipment and supplies.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Expert Care</h3>
+                    <p>Your pet receives professional veterinary care in their familiar, comfortable environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Coastcare Mobile Vet</h2>
+                    <p>At Coastcare, we're animal lovers first, vets second. After more than a decade caring for pets — and wrangling a fur-filled household of four cats, three dogs, and one very busy life — we knew something had to change.</p>
+                    <p>Between work, school runs, and trying to remember if you fed the dog (you did), getting to the vet can feel impossible. But your pets? They still deserve the best care, no matter how hectic things get.</p>
+                    <p>So, we flipped the script. Now, we bring the vet clinic to you — wherever your pets feel safe and you feel supported. It's expert care, minus the car ride and waiting room stress.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Pets</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Pets at Home</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Compassionate Care</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="H:\Coastcare\sample-mobile-vet.png" alt="Coastcare Mobile Vet Team - Professional Veterinary Care Sydney">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas areas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Areas We Serve</h2>
+                <p>Mobile vet services across Sydney's most popular suburbs</p>
+            </div>
+            <div class="service-areas-layout">
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <h4>Eastern Suburbs</h4>
+                        <p>Bondi, Coogee, Randwick, Clovelly</p>
+                    </div>
+                    <div class="area-card">
+                        <h4>Northern Beaches</h4>
+                        <p>Manly, Dee Why, Freshwater, Narrabeen</p>
+                    </div>
+                    <div class="area-card">
+                        <h4>Inner West</h4>
+                        <p>Newtown, Glebe, Leichhardt, Balmain</p>
+                    </div>
+                    <div class="area-card">
+                        <h4>North Shore</h4>
+                        <p>Chatswood, North Sydney, Mosman, Neutral Bay</p>
+                    </div>
+                    <div class="area-card">
+                        <h4>Sutherland Shire</h4>
+                        <p>Cronulla, Caringbah, Miranda, Sylvania</p>
+                    </div>
+                    <div class="area-card">
+                        <h4>And More</h4>
+                        <p>Contact us to confirm service in your area</p>
+                    </div>
+                </div>
+                <div class="service-areas-photo">
+                    <img src="H:\Coastcare\sample-mobile-vet.png" alt="Coastcare Mobile Vet Van - Service Areas Sydney">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to give your pet the stress-free veterinary care they deserve? Contact us today to book your mobile vet visit.</p>
+                    <div class="contact-details contact">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Call Us</h4>
+                                <p>(02) 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Us</h4>
+                                <p>hello@coastcarevet.com.au</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Hours</h4>
+                                <p>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Service Area</h4>
+                                <p>Sydney Metropolitan Area</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Book Your Visit</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pet-type">Pet Type *</label>
+                            <select id="pet-type" name="pet-type" required>
+                                <option value="">Select Pet Type</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="both">Both Dog & Cat</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select Service</option>
+                                <option value="checkup">Routine Checkup</option>
+                                <option value="vaccination">Vaccination</option>
+                                <option value="dental">Dental Care</option>
+                                <option value="emergency">Emergency Care</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your pet's needs or any specific concerns..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Booking Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Main Footer Content -->
+            <div class="footer-main">
+                <!-- Logo and Brand Section -->
+                <div class="footer-logo">
+                    <div class="footer-logo-container">
+                        <img src="H:\Coastcare\PNG-20250930T083835Z-1-001\PNG\4.png" alt="Coastcare Mobile Vet" class="footer-logo-image">
+                    </div>
+                    <p class="footer-tagline">Expert care. No waiting room.</p>
+                    <p class="footer-description">
+                        Bringing professional veterinary care directly to your home. 
+                        Because your pets deserve the best, wherever they feel most comfortable.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-stethoscope"></i> Services</a></li>
+                        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+                        <li><a href="#emergency"><i class="fas fa-ambulance"></i> Emergency</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#checkups"><i class="fas fa-heartbeat"></i> Routine Checkups</a></li>
+                        <li><a href="#vaccinations"><i class="fas fa-syringe"></i> Vaccinations</a></li>
+                        <li><a href="#dental"><i class="fas fa-tooth"></i> Dental Care</a></li>
+                        <li><a href="#surgery"><i class="fas fa-cut"></i> Minor Surgery</a></li>
+                        <li><a href="#senior"><i class="fas fa-walking"></i> Senior Pet Care</a></li>
+                        <li><a href="#emergency"><i class="fas fa-exclamation-triangle"></i> Emergency Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Service Areas -->
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+61234567890">(02) 1234 5678</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@coastcarevet.com.au">hello@coastcarevet.com.au</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sydney, NSW</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-areas">
+                        <div class="service-area">Eastern Suburbs</div>
+                        <div class="service-area">Northern Beaches</div>
+                        <div class="service-area">Inner West</div>
+                        <div class="service-area">North Shore</div>
+                        <div class="service-area">Sutherland Shire</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Coastcare Mobile Vet. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#cookies">Cookie Policy</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!mobileMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your booking request! We\'ll contact you within 24 hours to confirm your appointment.');
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards and service cards
+        document.querySelectorAll('.feature-card, .service-card, .step').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
